@@ -20,7 +20,7 @@ dwm_networkmanager () {
     else
         printf " %s Welcome back, Master.. ﳨ" "$CONNAME" 
     fi
-    printf "%s\n" "$SEP2"
+    printf "%s" "$SEP2"
 }
 
 dwm_networkmanager

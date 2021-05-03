@@ -27,6 +27,7 @@ export SEP2=" | "
 #. "$DIR/bar-functions/dwm_transmission.sh"
 #. "$DIR/bar-functions/dwm_cmus.sh"
 #. "$DIR/bar-functions/dwm_mpc.sh"
+. "$DIR/bar-functions/dwm_coins.sh"
 #. "$DIR/bar-functions/dwm_spotify.sh"
 . "$DIR/bar-functions/dwm_resources.sh"
 #. "$DIR/bar-functions/dwm_battery.sh"
@@ -37,7 +38,6 @@ export SEP2=" | "
 #. "$DIR/bar-functions/dwm_weather.sh"
 #. "$DIR/bar-functions/dwm_vpn.sh"
 . "$DIR/bar-functions/dwm_networkmanager.sh"
-. "$DIR/bar-functions/dwm_coins.sh"
 
 #. "$DIR/bar-functions/dwm_keyboard.sh"
 #. "$DIR/bar-functions/dwm_ccurse.sh"
@@ -59,7 +59,9 @@ do
  #   dispstr="$dispstr$(dwm_cmus)"
  #   dispstr="$dispstr$(dwm_mpc)"
  #   dispstr="$dispstr$(dwm_spotify)"
-   dispstr="$dispstr$(dwm_networkmanager)"
+  dispstr="$dispstr$(dwm_networkmanager)"
+
+  dispstr="$dispstr$(dwm_coins)"
 
 #   dispstr="$dispstr$(dwm_date)"
 #   dispstr="$dispstr$(dwm_weather)"
@@ -76,8 +78,7 @@ do
 #    dispstr="$dispstr$(dwm_date)"
 #    dispstr="$dispstr$(dwm_loadavg)"
  #   dispstr="$dispstr$(dwm_currency)"
-  dispstr="$dispstr$(dwm_coins)"
-    xsetroot -name "$dispstr"
-    sleep 5s
+   xsetroot -name "$dispstr"
+   sleep 3s
 
 done
