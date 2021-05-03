@@ -79,6 +79,6 @@ do
 #    dispstr="$dispstr$(dwm_loadavg)"
  #   dispstr="$dispstr$(dwm_currency)"
    xsetroot -name "$dispstr"
-   sleep 3s
+   sleep 10s
 
 done
